@@ -1,0 +1,11 @@
+__pycache__
+
+common/stt_navi.json
+
+common/key_local.py
+
+Escape_code/key_local.py
+
+sound/TTS_mp3/*
+
+Json_file/stt_navi.json
