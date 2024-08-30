@@ -57,3 +57,8 @@ Tmap_key, GPT_KEY 입력
 
 Escape_code/config.py
 내 파일주소에 맞게 값 변경
+
+Json file 추가해서 config.py
+
+# 코드 실행
+Escape_code/main.py
