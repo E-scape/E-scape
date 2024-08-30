@@ -60,5 +60,39 @@ Escape_code/config.py
 
 Json file 추가해서 config.py
 
+
+## GPS 설정 nano 또는 vim 사용
+```
+sudo nano /etc/default/gpsd
+```
+
+### 파일 수정
+```
+DEVICES="/dev/ttyUSB0"
+GPSD_OPTIONS="-F /var/run/gpsd.sock"
+START_DAEMON="true"
+USBAUTO="true"
+```
+
+### gpsd.socket 자동 실행
+```
+sudo systemctl enable gpsd.socket
+sudo systemctl start gpsd.socket
+sudo cgps 
+or
+sudo gpsmon
+```
+
+### gpsd.socket 설명
+sudo systemctl <입력하세요> gpsd.socket
+
+enable : 자동 실행 가능하게
+start : 시작
+restart : 재시작
+status : 상태보기
+stop : 멈추기
+disable : 자동 실행 멈추기
+
+
 # 코드 실행
 Escape_code/main.py
